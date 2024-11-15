@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Gale's Milk Tea</title>
-  <a href="https://eijlnnoy.github.io/GalesMilkTea/"><i class= "ri-arrow-left-line"></i>
   <style>
     body {
       font-family: sans-serif;
@@ -88,9 +87,29 @@
     .order-item {
       margin-bottom: 10px;
     }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .back-button i {
+      font-size: 20px;
+      color: #333;
+    }
   </style>
 </head>
 <body>
+  <div class="back-button" onclick="window.location.href='index.html'">
+    <i class="ri-arrow-left-line"></i>
+  </div>
+
   <div class="container">
     <h1>Milk Tea Order Form</h1>
     <form id="order-form">
