@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <button class="back-to-home" onclick="window.location.href='index.html'">
+      <a href="https://eijlnnoy.github.io/LandingPage/"><i class= "ri-arrow-left-line"></i> 
+    </button>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gale's Milk Tea</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <a href="#">Gale's <span>Milk</span> <span>Tea</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#special">Special Offers</a></li>
+        <li><a href="#client">Owner</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="img/gelian.copy-removebg-preview.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>Flavorful and <span>Refreshing</span></h1>
+        <p class="section__description">
+          Gale's Milk Tea is more than just a drink; it's an experience. We believe in crafting each cup with the utmost care, using only the freshest ingredients and blending them with passion and creativity. Our signature milk tea blends are a symphony of flavors, with layers of sweetness, richness, and refreshing notes that dance on your palate.
+        </p>
+        <div class="header__btn">
+          <style>
+            .btn {
+              background-color: rgb(92, 157, 218)
+            }
+          </style>
+          <style>
+            .btn {
+              color: black; /* Red */
+              /* Other button styles */
+            }
+          </style>
+          <button class ="btn">Visit Now</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container special__container" id="special">
+      <h2 class="section__header">Special Offers</h2>
+      <p class="section__description">
+        Indulge in the perfect blend of flavors and savings! 
+        Our milk tea specials are here to make your day brighter.
+      </p>
+      <div class="special__grid">
+        <div class="special__card">
+          <img src="img/img6-removebg-preview.png" alt="special" />
+          <h4>Cookies and Cream</h4>
+          <p>
+            Cream and Crunch Cookies on top.
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">PHP 50</p>
+            <button class="btn">Order</button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="img/img1-removebg-preview.png" alt="special" />
+          <h4>Caramel</h4>
+          <p>
+            Caramel on top.
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">PHP 50</p>
+            <button class="btn">Order</button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="img/img4-removebg-preview.png" alt="special" />
+          <br><br>
+          <h4>Strawberry</h4>
+          <p>
+            Strawberry Flavor
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">PHP 50</p>
+            <button class="btn">Order</button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="img/img2-removebg-preview.png" alt="special" />
+          <br><br>
+          <h4>Wintermelon</h4>
+          <p>
+            Milk with Boba Pearls on top.
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">PHP 50</p>
+            <button class="btn">Order</button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="img/img7-removebg-preview.png" alt="special" />
+          <br>
+          <h4>Nutella</h4>
+          <p>
+            Nutella Flavor
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">PHP 50</p>
+            <button class="btn">Order</button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="img/img10-removebg-preview.png" alt="special" />
+          <br><br><br>
+          <h4>Blueberry</h4>
+          <p>
+            Blueberry Flavor
+          </p> 
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">PHP 50</p>
+            <button class="btn">Order</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="banner__card">
+        <h2 class="section__header">Best Sellers</h2>  
+    </div>
+   
+
+    <section class="section__container banner__container">
+      <div class="special__card">
+        <img src="img/img5-removebg-preview.png" alt="special" />
+        <br><br>
+        <h4>Chocolate</h4>
+        <p>
+          Chocolate Flavor
+        </p>
+        <div class="special__ratings">
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+        </div>
+        <div class="special__footer">
+          <p class="price">PHP 50</p>
+          <button class="btn">Order</button>
+        </div>
+      </div>
+      <div class="special__card">
+        <img src="img/img3-removebg-preview.png" alt="special" />
+        <h4>Matcha</h4>
+        <p>
+          Tea Leaf Flavor
+        </p>
+        <div class="special__ratings">
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+        </div>
+        <div class="special__footer">
+          <p class="price">PHP 50</p>
+          <button class="btn">Order</button>
+        </div>
+      </div>
+      <div class="special__card">
+        <img src="img/img12-removebg-preview.png" alt="special" />
+        <br><br>
+        <h4>Purple Yam</h4>
+        <p>
+          Sweet Root Crops
+        </p>
+        <div class="special__ratings">
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+          <span><i class="ri-star-fill"></i></span>
+        </div>
+        <div class="special__footer">
+          <p class="price">PHP 50</p>
+          <button class="btn">Order</button>
+        </div>
+      </div>
+      </section>
+
+      <section class="section__container client__container" id="client">
+        <h2 class="section__header">Owner</h2>
+        <p class="section__description">
+          A student in Biliran Province State University and currently working student at the Holy Rosary Parish in the age og 21.
+        </p>
+        <div class="header__image">
+          <img src="img/onwer.jpg" alt="header" style="width: 45%; ">
+        </div>
+      </section>
+
+      <section class="section__container media__container">
+        <div class="media__content">
+  
+          <div class="section__container header__container" id="poster">
+            <div class="header__image">
+              <img src="img/gelian.poster.jpg" alt="header" style="width: 72%;">
+            </div>
+            <div class="header__content" style="font-family: 'Times New Roman', Times, serif;">
+              <h1 style="font-size: 70px;">Please Follow<br /><span>Our Page</span></h1>
+            </div>
+          </div>
+  
+          <!-- Right: Embedded YouTube Video -->
+          <div class="header__content">
+            <h2>MY VIDEO</h2>
+          <div class="media__video media__container">
+            <iframe 
+              width="100%" 
+              height="500" 
+              src="https://www.youtube.com/embed/eYkiBsiEtlI"
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="autoplay; encrypted-media" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#">Gale's <span>Milk Tea</span></a>
+          </div>
+          <p class="section__description">
+            <b>Mission</b> To bring joy and refreshment to every sip, crafting milk tea experiences that are as fresh and vibrant as the colors in our logo. We strive to use the finest ingredients, blending them with passion and creativity to create unique flavors that delight our customers.
+            <br><br>
+            <b>Vision</b> To become the leading purveyor of milk tea, known for our commitment to quality, innovation, and customer satisfaction. We envision a world where Gale's Milk Tea is synonymous with happiness, where every cup is a celebration of life's simple pleasures.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul class="footer__links">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Meal Deals</a></li>
+            <li><a href="#">Catering Options</a></li>
+            <li><a href="#">Seasonal Offerings</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Information</h4>
+          <ul class="footer__links">
+            <li><a href="#">Nutrition Information</a></li>
+            <li><a href="#">Allergen Information</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div>
+          <ul class="footer__links">
+            <li>
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              Padre Innocentes St. Naval, Biliran
+            </li>
+            <li>
+              <span><i class="ri-mail-fill"></i></span>
+              sabondogeliangale@gmail.com
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <style>
+              .footer__socials i {
+                font-size: 40px; /* Or use width/height or scale() */
+              }
+            </style>
+            <a href="https://www.facebook.com/geliangale.sabondo.7?mibextid=ZbWKwL"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="https://www.instagram.com/geliangale/profilecard/?igsh=c2J1ZHBzOHZiYno3"><i class="ri-instagram-fill"></i></a>
+            <a href="https://youtube.com/@geliangalesabondo7827?si=fBZq1mF7jdnarYyn"><i class="ri-youtube-fill"></i></a>
+            <a href="https://t.me/gale280302"><i class="ri-telegram-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Gale's Milk Tea. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gale's Milk Tea</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: rgba(252, 127, 9, 0.5);
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 500px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .flavor-options {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flavor-option {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button {
+      background-color:rgb(92, 157, 218);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: rgba(252, 127, 9, 0.5);
+    }
+
+    .order-summary {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    .order-summary h3 {
+      margin-top: 0;
+    }
+
+    .order-item {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Milk Tea Order Form</h1>
+    <form id="order-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="flavor">Flavor:</label>
+        <div class="flavor-options">
+          <div class="flavor-option">
+            <input type="radio" id="chocolate" name="flavor" value="Chocolate" required>
+            <label for="chocolate">Chocolate</label>
+          </div>
+          <div class="flavor-option">
+            <input type="radio" id="matcha" name="flavor" value="Matcha">
+            <label for="matcha">Matcha</label>
+          </div>
+          <div class="flavor-option">
+            <input type="radio" id="purple-yam" name="flavor" value="Purple Yam">
+            <label for="purple-yam">Purple Yam</label>
+          </div>
+          <div class="flavor-option">
+            <input type="radio" id="purple-yam" name="flavor" value="Purple Yam">
+            <label for="purple-yam">Strawberry</label>
+          </div>
+          <div class="flavor-option">
+            <input type="radio" id="purple-yam" name="flavor" value="Purple Yam">
+            <label for="purple-yam">Mango</label>
+          </div>
+          <div class="flavor-option">
+            <input type="radio" id="purple-yam" name="flavor" value="Purple Yam">
+            <label for="purple-yam">Others</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="toppings">Toppings:</label>
+        <div class="flavor-options">
+          <div class="flavor-option">
+            <input type="checkbox" id="tapioca-pearls" name="toppings" value="Tapioca Pearls">
+            <label for="tapioca-pearls">Tapioca Pearls</label>
+          </div>
+          <div class="flavor-option">
+            <input type="checkbox" id="puddings" name="toppings" value="Puddings">
+            <label for="puddings">Puddings</label>
+          </div>
+          <div class="flavor-option">
+            <input type="checkbox" id="jellies" name="toppings" value="Jellies">
+            <label for="jellies">Jellies</label>
+          </div>
+        </div>
+      </div>
+      <button type="submit">Place Order</button>
+    </form>
+    <div class="order-summary">
+      <h3>Order Summary</h3>
+      <div id="order-details"></div>
+    </div>
+  </div>
+
+  <script>
+    const orderForm = document.getElementById('order-form');
+    const orderDetails = document.getElementById('order-details');
+
+    orderForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const flavor = document.querySelector('input[name="flavor"]:checked').value;
+      const size = document.getElementById('size').value;
+      const toppings = Array.from(document.querySelectorAll('input[name="toppings"]:checked')).map(topping => topping.value);
+
+      const orderSummary = `
+        <div class="order-item">Name: ${name}</div>
+        <div class="order-item">Email: ${email}</div>
+        <div class="order-item">Flavor: ${flavor}</div>
+        <div class="order-item">Size: ${size}</div>
+        <div class="order-item">Toppings: ${toppings.length > 0 ? toppings.join(', ') : 'None'}</div>
+      `;
+
+      orderDetails.innerHTML = orderSummary;
+    });
+  </script>
+</body>
+</html>
