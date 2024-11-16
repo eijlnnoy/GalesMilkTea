@@ -9,11 +9,11 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background-color: rgba(252, 127, 9, 0.5);
+      background-color: pink;
     }
 
     .container {
-      background-color: #fff;
+      background-color: #f3a024;
       padding: 30px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -60,8 +60,8 @@
     }
 
     button {
-      background-color:rgb(92, 157, 218);
-      color: white;
+      background-color:white;
+      color: black;
       padding: 12px 20px;
       border: none;
       border-radius: 4px;
@@ -70,7 +70,7 @@
     }
 
     button:hover {
-      background-color: rgba(252, 127, 9, 0.5);
+      background-color: #353536;
     }
 
     .order-summary {
@@ -92,10 +92,8 @@
       position: fixed;
       top: 20px;
       left: 20px;
-      background-color: #fff;
+      background-color: pink;
       padding: 10px;
-      border-radius: 50%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       cursor: pointer;
     }
 
@@ -106,12 +104,10 @@
   </style>
 </head>
 <body>
-  <div class="back-button" onclick="window.location.href='index.html'">
-    <i class="ri-arrow-left-line"></i>
-  </div>
+  <a href="index.html" class="back-button">&#8592; <i class= "ri-arrow-left-line"></i> </a> 
 
   <div class="container">
-    <h1>Milk Tea Order Form</h1>
+    <h1>Gale's Milk Tea</h1>
     <form id="order-form">
       <div class="form-group">
         <label for="name">Name:</label>
@@ -182,6 +178,9 @@
       <div id="order-details"></div>
     </div>
   </div>
+  <div class="image-container">
+    <img src="img/logo.3.png" alt="Gale's Milk Tea Logo">
+</div>
 
   <script>
     const orderForm = document.getElementById('order-form');
